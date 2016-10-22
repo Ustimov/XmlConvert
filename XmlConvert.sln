@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ustimov.Org.XmlConvert", "Ustimov.Org.XmlConvert\Ustimov.Org.XmlConvert.csproj", "{D2DD3CA6-0F6D-42BB-A5C1-6DED697F57D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlConvertDemo", "XmlConvertDemo\XmlConvertDemo.csproj", "{F2FDEA13-F3FB-41E2-B9F5-C320D2A7E068}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlConvert", "XmlConvert\XmlConvert.csproj", "{D2DD3CA6-0F6D-42BB-A5C1-6DED697F57D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,6 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2FDEA13-F3FB-41E2-B9F5-C320D2A7E068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2FDEA13-F3FB-41E2-B9F5-C320D2A7E068}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2FDEA13-F3FB-41E2-B9F5-C320D2A7E068}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2FDEA13-F3FB-41E2-B9F5-C320D2A7E068}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D2DD3CA6-0F6D-42BB-A5C1-6DED697F57D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D2DD3CA6-0F6D-42BB-A5C1-6DED697F57D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2DD3CA6-0F6D-42BB-A5C1-6DED697F57D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
