@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Ustimov.Org.XmlConvert</id>
+    <version>0.1.0</version>
+    <authors>Artem Ustimov</authors>
+    <owners>Ustimov</owners>
+    <licenseUrl>https://raw.githubusercontent.com/Ustimov/XmlConvert/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Ustimov/XmlConvert</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/Ustimov/XmlConvert/master/icon/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Wrapper around System.Xml.XmlSerializer for simple and concise converting C# objects (DTO, POCO) to XML representation and vice verse.</description>
+    <releaseNotes>
+	  -->
+	  [0.1.0]
+	  - Initial release
+	</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>xml serialization deserialization DTO POCO</tags>
+  </metadata>
+  <files>
+    <file src="XmlConvert\bin\Release\Ustimov.Org.XmlConvert.dll" target="lib\portable-win+net45+wp8+win8+wpa81" />
+  </files>
+</package>

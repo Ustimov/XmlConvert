@@ -4,6 +4,8 @@ Wrapper around System.Xml.XmlSerializer for simple and concise converting C# obj
 API inspired by JsonConvert from [Json.NET](https://github.com/JamesNK/Newtonsoft.Json) library.
 Designed for use with [ServiceStack](https://github.com/ServiceStack/ServiceStack) backend, but other applications are acceptable too.
 
+NuGet: [Ustimov.Org.XmlConvert](https://www.nuget.org/packages/Ustimov.Org.XmlConvert).
+
 ## Features
 
 * Support for object serialization/deserialization without namespaces
@@ -14,7 +16,7 @@ Designed for use with [ServiceStack](https://github.com/ServiceStack/ServiceStac
 
 ## How to use
 
-Look demo project for full example.
+Look [demo project](https://github.com/Ustimov/XmlConvert/blob/master/XmlConvertDemo/Program.cs) for full example.
 
 ### Serialization
 
