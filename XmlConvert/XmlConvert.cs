@@ -3,7 +3,6 @@
  */
 
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Xml.Serialization;
 
@@ -13,31 +12,20 @@ namespace Ustimov.Org.XmlConvert
     {
         public static string SerializeObject<T>(T obj,
                                                 string defaultNamespace = null,
-                                                IDictionary<string, string> namespaces = null,
+                                                XmlSerializerNamespaces namespaces = null,
                                                 Type[] knownTypes = null)
         {
             var xmlSerializer = new XmlSerializer(typeof(T), null, knownTypes, null, defaultNamespace);
 
-            var xmlSerializerNamespaces = new XmlSerializerNamespaces();
-
-            if (namespaces != null)
-            {
-                foreach (var ns in namespaces)
-                {
-                    xmlSerializerNamespaces.Add(ns.Key, ns.Value);
-                }
-            }
-
             using (var stringWriter = new StringWriter())
             {
-                xmlSerializer.Serialize(stringWriter, obj, xmlSerializerNamespaces);
+                xmlSerializer.Serialize(stringWriter, obj, namespaces);
                 return stringWriter.ToString();
             }
         }
 
         public static T DeserializeObject<T>(string xml,
                                              string defaultNamespace = null,
-                                             IDictionary<string, string> namespaces = null,
                                              Type[] knownTypes = null)
         {
             var xmlSerializer = new XmlSerializer(typeof(T), null, knownTypes, null, defaultNamespace);

@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Ustimov.Org.XmlConvert</id>
-    <version>0.1.0</version>
+    <version>0.2.0</version>
     <authors>Artem Ustimov</authors>
     <owners>Ustimov</owners>
     <licenseUrl>https://raw.githubusercontent.com/Ustimov/XmlConvert/master/LICENSE</licenseUrl>
@@ -12,6 +12,9 @@
     <description>Wrapper around System.Xml.XmlSerializer for simple and concise converting C# objects (DTO, POCO) to XML representation and vice verse.</description>
     <releaseNotes>
 	  -->
+	  [0.2.0]
+	  - Changed "namespaces" argument type of SerializeObject method
+	  - Removed unused "namespaces" argument from DeserializeObject method
 	  [0.1.0]
 	  - Initial release
 	</releaseNotes>

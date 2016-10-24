@@ -4,6 +4,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using Ustimov.Org.XmlConvert;
 
 namespace XmlConvertDemo
@@ -65,12 +66,12 @@ namespace XmlConvertDemo
 
             foreach (var contact in contactsReponse.Contacts)
             {
+
+                var xmlSerializerNamespaces = new XmlSerializerNamespaces();
+                xmlSerializerNamespaces.Add("i", "http://ustimov.org/instance/");
+
                 // Support for object serialization/deserialization with default and custom namespaces
-                Console.WriteLine(XmlConvert.SerializeObject(contact, "http://ustimov.org/",
-                    new Dictionary<string, string>
-                    {
-                        {"i", "http://ustimov.org/instance/" }
-                    }));
+                Console.WriteLine(XmlConvert.SerializeObject(contact, "http://ustimov.org/", xmlSerializerNamespaces));
 
                 Console.WriteLine();
 

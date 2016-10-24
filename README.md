@@ -16,7 +16,7 @@ NuGet: [Ustimov.Org.XmlConvert](https://www.nuget.org/packages/Ustimov.Org.XmlCo
 
 ## How to use
 
-Look [demo project](https://github.com/Ustimov/XmlConvert/blob/master/XmlConvertDemo/Program.cs) for full example.
+Look at [demo project](https://github.com/Ustimov/XmlConvert/blob/master/XmlConvertDemo/Program.cs) for full example.
 
 ### Serialization
 
